@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap'); /* Roboto Condensed, greek font-family */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap'); /* Ubuntu Condensed, h1 font-family */
+
+body {
+    background-image: url(background_photo.jpg);
+}
+
+h1 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: black;
+    text-align: center;
+    text-decoration: yellow underline;
+    text-underline-offset: 5px;
+}
+
+h3 {
+    display: block;
+    left: 10px;
+    font-family: 'Ubuntu Condensed', sans-serif; 
+    color: black;
+    text-decoration: black underline;
+}
+
+img {
+    border: yellow solid 4px;
+    border-radius: 3px;
+}
+
+img:hover {
+    border: #2A2E34 solid 4px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.making_the_vinyl {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 200px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.vinyl_window {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.vinyl_preview {
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 380px 60px 1fr 1fr;
+    align-items: flex-start;
+}
+
+.diametros, .RPM, .choices, .weight, .colour, .div_color {
+
+    padding-left: 10px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    border: yellow 3px solid;
+    border-radius: 15px;
+
+    color: black;
+    background-color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+}
+
+.diametros:hover, .RPM:hover, .choices:hover, .weight:hover, .colour:hover, .div_color:hover {
+    background-color: #ffeb79;
+    color: black;
+    border: #2A2E34 3px solid;
+    transition: 0.3s;
+}
+
+
+input[value] {
+    display: inline-block;
+    position: relative;
+}
+
+b {
+    font-size: large;
+    text-decoration: underline black;
+    text-underline-offset: 1px;
+}
+
+div > div > p {
+    text-align: center;
+}
+
+.synolo > label {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    text-decoration: underline black;
+    text-underline-offset: 1px;
+}
+
+button {
+
+    margin-top: 10px;
+    border-radius: 4px;
+    display: block;
+
+    padding: 3px;
+
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 20px;
+    border: 3px yellow solid;
+    background-color: white;
+}
+
+button:hover {
+
+    background-color: black;
+    cursor: pointer;
+    color: whitesmoke;
+    border: black solid 3px;
+
+    transition: 0.5s;
+
+}
+
+select {
+
+    justify-self: center;
+    border: yellow 2px solid;
+    border-radius: 4px;
+}
+
+#price {
+    font-weight: 500;
+    font-size: larger;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#charge_button {
+    justify-self: center;
+    margin: 10px;
+    width: 120px;
+    height: 50px;
+}
+
+.synolo {
+    align-self: flex-start;
+}
+
+#vinyl_info {
+    font-weight: bold;
+    font-size: large;
+    justify-self: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    width: 300px;
+}
+
+article h3 {
+    text-transform: uppercase;
+    display: block;
+    left: 10px;
+    font-family: 'Ubuntu Condensed', sans-serif; 
+    color: black;
+    text-decoration: black underline;
+}
+
+ol {
+    list-style-type: none;
+}
+
+ol > li > p, ol > li > ul > li > p{
+    font-weight: 500;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+article > ol > li {
+    padding-left: 20px;
+    border: black 2px solid;
+    border-radius: 20px;
+    background-color: rgb(230, 228, 193)
+}
+
+article > ol > li:hover {
+    background-color: white;
+    border: #ffeb79 2px solid;
+    transition: 0.3s;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+article b {
+    color: #d8bd23;
+    text-decoration: #2A2E34 underline solid;
+    text-underline-offset: 1px;
+}
+
+article b:hover {
+    color: black;
+    text-decoration: underline solid #ffeb79;
+    transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+
+    .vinyl_window {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .making_the_vinyl {
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(3, 240px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        bottom: 15px;
+    }
+
+    .vinyl_preview {
+        top: 15px;
+        justify-content: center;
+    }
+}

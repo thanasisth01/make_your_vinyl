@@ -1,0 +1,121 @@
+<doctype! html> 
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>Δημιουργία Βινυλίου</title>
+        <link rel="stylesheet" href="create_vinyl_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    
+        <h1>Δημιούργησε ένα Βινύλιο</h1>
+
+        <h3>Διάλεξε πως θέλεις να διαμορφώσεις το βινύλιο σου:</h3>
+
+    <div class="vinyl_window">
+        
+        <div class="making_the_vinyl">
+            
+            <div class="diametros" id="diam">
+                <p><b>ΔΙΑΜΕΤΡΟΣ</b> του Βινυλίου:</p>
+                <input type="radio" name="diametros" value="7" class="diametros_input" checked> <label>7 inches (17,5  cm) <em>[5€]</em></label> <br>
+                <input type="radio" name="diametros" value="10" class="diametros_input"> <label>10 inches (25  cm) <em>[7€]</em></label> <br>
+                <input type="radio" name="diametros" value="12" class="diametros_input"> <label>12 inches (30,2  cm) <em>[8,5€]</em></label> <br>
+            </div>
+            
+            <div class="choices" id="diar">
+                <p><b>ΔΙΑΡΚΕΙΑ</b> του Βινυλίου:</p>
+                <input type="radio" name="diarkeia" value="Maxi_Single" class="diarkeia_input" checked> <label> Maxi Single (3 songs) <em>[10€]</em></label> <br>
+                <input type="radio" name="diarkeia" value="Mini_LP" class="diarkeia_input"> <label>Mini LP (4-6 songs) <em>[13€]</em></label> <br>
+                <input type="radio" name="diarkeia" value="EP" class="diarkeia_input"> <label>EP (Extended Play) <em>[15€]</em></label> <br>
+                <input type="radio" name="diarkeia" value="LP" class="diarkeia_input"> <label>LP (Long Play) <em>[18€]</em></label> <br>
+            </div>
+            
+            <div class="RPM" id="strofes">
+                <p><b>ΣΤΡΟΦΕΣ ΑΝΑ ΛΕΠΤΟ </b> του Βινυλίου:</p> <br>
+                <input type="radio" name="rpm" value="33_1/3" class="RPM_input" checked> <label>33 1/3 RPM <em>[10€]</em></label> <br>
+                <input type="radio" name="rpm" value="45" class="RPM_input"> <label>45 RPM <em>[13€]</em></label> <br>
+            </div>
+
+            <div class="weight" id="baros"> 
+                <p><b>ΒΑΡΟΣ</b> του Βινυλίου:</p>
+                <input type="radio" name="weight" value="120" class="weight_input" checked> <label>120-140 gr. <em>[7€]</em></label> <br>
+                <input type="radio" name="weight" value="180" class="weight_input"> <label>180-200 gr. <em>[10€]</em></label> <br>
+            </div>
+
+            <div class="div_color" id="chroma">
+                <p><b>ΧΡΩΜΑ</b> του Βινυλίου:</p>
+                <p>Μπορείς να διαλέξεις ανάμεσα σε καθαρά χρώματα <em>[4€]</em> ή διαβαθμίσεις <em>[7€]</em>.</p>
+                <label id="pick_color">Επίλεξε: </label> 
+                <select>
+                    <option value="black" class="color" checked> <label>Black</label> <br>
+                    <option value="silver" class="color"> <label>Silver</label> <br>
+                    <option value="white" class="color"> <label>White</label> <br>
+                    <option value="yellow" class="color"> <label>Yellow</label> <br>
+                    <option value="orange" class="color"> <label>Orange</label> <br>
+                    <option value="red" class="color"> <label>Red</label> <br>
+                    <option value="pink" class="color"> <label>Pink</label> <br>
+                    <option value="purple" class="color"> <label>Purple</label> <br>
+                    <option value="blue" class="color"> <label>Blue</label> <br>
+                    <option value="green" class="color"> <label>Green</label> <br>
+                    <option value="colourful-scaled" class="color"> <label>Colourful (Scaled)</label> <br>
+                    <option value="green-orange-scaled" class="color"> <label>Green-Orange (Scaled)</label> <br>
+                    <option value="red-orange-white-scaled" class="color"> <label>Red-Orange-White (Scaled)</label> <br>
+                </select>
+
+                <button type="button" id="vinyl_change_button">Change Vinyl's Color</button>
+            </div>
+
+        </div>
+
+        <div class="vinyl_preview">
+            <img id="vinyl_image" src="Colors/black_vinyl.jpg"> 
+            <p id="vinyl_info">Εδώ φαίνονται οι λεπτομέρειες του Βινυλίου.</p>
+            <button type="button" id="charge_button">Charge Vinyl</button>
+            <div class="synolo">
+                <label>ΣΥΝΟΛΟ:</label> 
+                <input type="text" value="0 €" id="price" readonly> 
+            </div>
+        </div>
+
+    </div>   
+
+    <article>
+
+    <ol>
+        
+        <li><h3>Διαρκεια</h3>
+        <ul>
+        <li><p>Τα αρχικά <b>LP</b> σημαίνουν Long Play (ή αλλιώς σηματοδοτούν το Long Playing Album) και αφορά τους δίσκους μεγάλης διάρκειας. Η μέση «κανονική» διάρκεια οριοθετείται ανάμεσα στα 30 και 45 λεπτά.</p></li>      
+        <li><p>Τα αρχικά <b>EP</b> σημαίνουν Extended Play. Παρ’ όλο το χαρακτηρισμό του (εκτεταμένο), το EP έχει μικρότερη διάρκεια από το LP και αφορά τα album μικρότερης διάρκειας.</p></li>     
+        <li><p>Το <b>Mini LP</b> είναι 12ιντσο βινύλιο που συνήθως περιέχει 4-6 τραγούδια και η μέση διάρκειά του κυμαίνεται ανάμεσα στα 15 και (σπάνια) 25 λεπτά.</p></li>      
+        <li><p>Το <b>Maxi Single</b> ως όρος άρχισε να χρησιμοποιείται τη δεκαετία του ’70 και αναφερόταν αρχικά σε δισκάκια 7 ιντσών που περιείχαν ένα τραγούδι στην Α πλευρά και δύο στη Β.</p></li>    
+        </ul>
+        </li>
+        <br>
+        
+        <li><h3>Στροφες Ανα Λεπτο (RPM)</h3>
+        <p>Σημαίνει στροφές ανά λεπτό, δηλαδή πόσες φορές το πλατώ του πικαπ θα κάνει μια πλήρη περιστροφή σε ένα λεπτό.</p>
+        </li>
+        <br>
+
+        <li><h3>Βαρος</h3>
+        <p>Το «βαρύ» βινύλιο έχει δεδομένη μηχανική ανωτερότητα απέναντι στο «ελαφρύτερο» καθώς παρουσιάζει χαμηλότερους κραδασμούς και εξασθενεί πολύ αργότερα.
+            Επίσης καθώς τα αυλάκια των λεπτότερων δίσκων είναι πιο ρηχά η καταγραφή του σήματος είναι χαμηλότερη και ως εκ τούτου μας αναγκάζει να ανεβάζουμε την ένταση με συνέπεια την παραμόρφωση του ήχου. 
+            Επίσης οι λεπτότεροι δίσκοι είναι πιο επιρρεπείς στις στρεβλώσεις κατά τη διάρκεια της διαδικασίας του πρεσαρίσματος στο εργοστάσιο.</p>
+        </li>
+        <br>  
+          
+        <li><h3>Χρωμα</h3>
+        <p>Η διαφορά του έγχρωμου από τον μαύρο δίσκο είναι κυρίως αισθητική. Υπάρχει η άποψη των πολύ «ψαγμένων» βινυλιολατρών ότι το μαύρο βινύλιο είναι ποιοτικά ανώτερο από το έγχρωμο καθώς ο μαύρος άνθρακας που προστίθεται 
+            κατά την συμπίεση του δίνει μεγαλύτερη ανθεκτικότητα. Ωστόσο δύσκολα κάποιος θα καταλάβει τη διαφορά και επιπροσθέτως θα έχει στην κατοχή του ένα όμορφο και πολύ συχνά συλλεκτικό βινύλιο καθώς τα έγχρωμα αντίτυπα 
+            συνήθως παράγονται σε περιορισμένο αριθμό.</p>
+        </li>
+        <br>    
+
+    </ol>
+    
+</article>
+    <script src="vinyls_colors.js"></script> 
+    </body>
+</html>
